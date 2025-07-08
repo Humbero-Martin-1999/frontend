@@ -1,1 +1,18 @@
-<p>home works!</p>
+<header>
+  <h1>Plataforma C2C</h1>
+  <nav>
+    <a routerLink="/">Inicio</a>
+    <a routerLink="/create-product">Crear Producto</a>
+  </nav>
+</header>
+<main>
+  <h2>Productos disponibles</h2>
+  <div class="product-list">
+    <div *ngFor="let product of products" class="product-card">
+      <img [src]="product.image" alt="{{product.title}}">
+      <h3>{{product.title}}</h3>
+      <p>${{product.price}}</p>
+      <a [routerLink]="['/product', product.id]">Ver más</a>
+    </div>
+  </div>
+</main>

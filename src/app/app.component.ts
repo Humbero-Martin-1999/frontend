@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { AppRoutingModule } from "./app-routing.module";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [AppRoutingModule]
 })
-export class App {
-  protected title = 'frontend';
+export class AppComponent {
+  title = 'frontend';
 }
