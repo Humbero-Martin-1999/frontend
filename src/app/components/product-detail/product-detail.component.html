@@ -6,14 +6,6 @@
   </nav>
 </header>
 <main>
-  <div *ngIf="product">
-    <img [src]="product.image" alt="{{product.title}}">
-    <h2>{{product.title}}</h2>
-    <p class="price">${{product.price}}</p>
-    <p>{{product.description}}</p>
-    <button>Contactar vendedor</button>
-  </div>
-  <div *ngIf="!product">
-    <p>Producto no encontrado.</p>
-  </div>
+  <h2>Detalles del producto</h2>
+  <p>Este es un placeholder para los detalles de un producto.</p>
 </main>

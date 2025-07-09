@@ -7,19 +7,19 @@
 </header>
 <main>
   <h2>Publicar un producto</h2>
-  <form (ngSubmit)="onSubmit()">
-    <label for="title">Título:</label>
-    <input id="title" [(ngModel)]="product.title" name="title" required>
+  <form>
+    <label>Título:</label>
+    <input type="text">
 
-    <label for="description">Descripción:</label>
-    <textarea id="description" [(ngModel)]="product.description" name="description" required></textarea>
+    <label>Descripción:</label>
+    <textarea></textarea>
 
-    <label for="price">Precio:</label>
-    <input id="price" type="number" [(ngModel)]="product.price" name="price" required>
+    <label>Precio:</label>
+    <input type="number">
 
-    <label for="image">Imagen (URL):</label>
-    <input id="image" [(ngModel)]="product.image" name="image" required>
+    <label>Imagen (URL):</label>
+    <input type="text">
 
-    <button type="submit">Publicar</button>
+    <button type="submit">Agregar</button>
   </form>
 </main>

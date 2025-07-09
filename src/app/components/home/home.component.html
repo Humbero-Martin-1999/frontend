@@ -6,13 +6,6 @@
   </nav>
 </header>
 <main>
-  <h2>Productos disponibles</h2>
-  <div class="product-list">
-    <div *ngFor="let product of products" class="product-card">
-      <img [src]="product.image" alt="{{product.title}}">
-      <h3>{{product.title}}</h3>
-      <p>${{product.price}}</p>
-      <a [routerLink]="['/product', product.id]">Ver más</a>
-    </div>
-  </div>
+  <h2>Bienvenido a la Plataforma C2C</h2>
+  <p>Esta es la página de inicio. Aquí puedes ver productos en el futuro.</p>
 </main>
